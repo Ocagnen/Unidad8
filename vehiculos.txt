@@ -1,0 +1,30 @@
+0 - :0858-LOP:Fiat:X23:Azul:60.0:false:30 :true
+0 - :0858-LOP:Fiat:X23:Azul:60.0:false:30 :true
+0 - :0858-LOP:Fiat:X23:Azul:60.0:false:30 :true
+0 - :0858-LOP:Fiat:X23:Azul:60.0:false:30 :true
+0 - :0858-LOP:Fiat:X23:Azul:60.0:false:30 :true
+0 - :0858-LOP:Fiat:X23:Azul:60.0:false:30 :true
+0 - :0858-LOP:Fiat:X23:Azul:60.0:false:30 :true
+0 - :0858-LOP:Fiat:X23:Azul:60.0:false:30 :true
+0 - :0858-LOP:Fiat:X23:Azul:60.0:false:30 :true
+0 - :0858-LOP:Fiat:X23:Azul:60.0:false:30 :true
+1 - :7463-LP:Seat:X5:Rojo:30.0:false:690
+1 - :7463-LP:Seat:X5:Rojo:30.0:false:690
+1 - :7463-LP:Seat:X5:Rojo:30.0:false:690
+1 - :7463-LP:Seat:X5:Rojo:30.0:false:690
+1 - :7463-LP:Seat:X5:Rojo:30.0:false:690
+1 - :7463-LP:Seat:X5:Rojo:30.0:false:690
+1 - :7463-LP:Seat:X5:Rojo:30.0:false:690
+1 - :7463-LP:Seat:X5:Rojo:30.0:false:690
+1 - :7463-LP:Seat:X5:Rojo:30.0:false:690
+1 - :7463-LP:Seat:X5:Rojo:30.0:false:690
+2 - :5698-clv:Renaul:X1:Verde:50.0:false:20:2000
+2 - :5698-clv:Renaul:X1:Verde:50.0:false:20:2000
+2 - :5698-clv:Renaul:X1:Verde:50.0:false:20:2000
+2 - :5698-clv:Renaul:X1:Verde:50.0:false:20:2000
+2 - :5698-clv:Renaul:X1:Verde:50.0:false:20:2000
+2 - :5698-clv:Renaul:X1:Verde:50.0:false:20:2000
+2 - :5698-clv:Renaul:X1:Verde:50.0:false:20:2000
+2 - :5698-clv:Renaul:X1:Verde:50.0:false:20:2000
+2 - :5698-clv:Renaul:X1:Verde:50.0:false:20:2000
+2 - :5698-clv:Renaul:X1:Verde:50.0:false:20:2000

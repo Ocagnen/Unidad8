@@ -41,8 +41,7 @@ public class Actividad3 {
                     flujo.newLine();
                 } else {
                    flujo.write(","); 
-                }
-                
+                }    
                 
 
             }
@@ -52,6 +51,9 @@ public class Actividad3 {
         } catch (IOException ioe) {
             System.out.println(ioe.getMessage());
         }
+        
+        
+        
 
         String line;
         System.out.println("Leer fichero - "+fichero3);
