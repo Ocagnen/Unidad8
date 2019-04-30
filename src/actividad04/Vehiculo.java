@@ -148,7 +148,7 @@ public class Vehiculo implements Comparable<Vehiculo> {
     }
     
     public String toStringFichero(){
-        return ":" + matricula + ":" + marca + ":" + modelo
+        return ":"+bastidor + ":" + matricula + ":" + marca + ":" + modelo
                 + ":" + color + ":" + tarifa + ":" + disponible;
     }
 

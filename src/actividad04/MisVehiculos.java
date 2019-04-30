@@ -7,6 +7,7 @@ package actividad04;
 
 import java.io.BufferedWriter;
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -116,9 +117,31 @@ public class MisVehiculos {
         }
         
         String tmp;
+        String[] arr1;
+        ArrayList<Vehiculo> listaVehi = new ArrayList<>();
         
+        try (Scanner datosFichero = new Scanner(new File(fichero))){
+            
+            while(datosFichero.hasNextLine()){
+                tmp = datosFichero.nextLine();
+                tmp = tmp.substring(3);
+                
+                arr1 = tmp.split(":");   
+                
+                listaVehi.add(new Vehiculo(Integer.parseInt(arr1[1]), arr1[2], arr1[3], arr1[4], arr1[5], Double.parseDouble(arr1[6])));
+                                
+            }
+            
+            
+        } catch (FileNotFoundException fnfe) {
+            System.out.println(fnfe.getMessage());
+        }
         
+        System.out.println("-------------------------------");
         
+       for (Vehiculo vehiculo : listaVehi) {
+           System.out.println(vehiculo);
+        }
         
         
         

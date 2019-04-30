@@ -10,6 +10,8 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -27,7 +29,7 @@ public class Actividad3 {
 
         try (BufferedWriter flujo = new BufferedWriter(new FileWriter(fichero3))) {
 
-            for (int i = 0; i < 50; i++) {
+            for (int i = 0; i < 50;) {
 
                 tmp = rnd.nextInt(122 - 97) + 97;
 
@@ -39,6 +41,7 @@ public class Actividad3 {
 
                 if ((char) tmp == 'x' || (char) tmp == 'X') {
                     flujo.newLine();
+                    i++;
                 } else {
                    flujo.write(","); 
                 }    
@@ -65,6 +68,23 @@ public class Actividad3 {
                 System.out.println(line);
             }
             
+        } catch (FileNotFoundException fnfe) {
+            System.out.println(fnfe.getMessage());
+        }
+        
+        String linea;       
+        int contador = 0;
+        System.out.println("Leer fichero - "+fichero3);
+
+        try (Scanner datosFicheros = new Scanner(new File(fichero3))){
+            
+            while(datosFicheros.hasNextLine()){                
+                linea = datosFicheros.nextLine();
+                if(linea.contains("j,v")){
+                    System.out.println("Linea: "+contador + " Pos: "+linea.indexOf("j,v")/2);
+                }
+                contador++;
+            }
         } catch (FileNotFoundException fnfe) {
             System.out.println(fnfe.getMessage());
         }
