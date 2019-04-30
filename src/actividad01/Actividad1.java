@@ -55,6 +55,8 @@ public class Actividad1 {
         try (Scanner datosFichero = new Scanner(new File(ficheroM))) {
 
             while (datosFichero.hasNextLine()) {
+                
+                // line = datosFichero.next(); Leeria los tokens separados por espacios, comas, ..etc
                 line = datosFichero.nextLine();               
                 System.out.println(line);    
                 
