@@ -5,6 +5,7 @@
  */
 package actividad09;
 
+import actividad08.Furgoneta;
 import actividad08.Vehiculo;
 import java.io.File;
 import java.io.FileInputStream;
@@ -64,7 +65,7 @@ public class Main {
         // Mostrar el contenido
         System.out.println("");
         System.out.println("Mostrar contenido de carpeta");
-        File f = new File("/home/javier/NetBeansProjects/Unidad8/copias");
+        File f = new File("copias");
         if (f.exists()){
             File[] ficheros = f.listFiles();
             for (File file2 : ficheros) {
@@ -78,17 +79,17 @@ public class Main {
         FileInputStream fich = null;
         
         try {
-            fich = new FileInputStream("./furgonetas.dat");
+            fich = new FileInputStream("furgonetas.dat");
 
             // A partir del fichero anterior se crea el flujo para leer objetos
             // Estructura try-with-resources
             try (ObjectInputStream flujo = new ObjectInputStream(fich)) {
                 
-                Vehiculo a;
+                Furgoneta a;
                 while (fich.available() > 0) {
                     // Se hace un casting explícito del objeto devuelto
                     // por readObject()
-                    a = (Vehiculo) flujo.readObject();
+                    a = (Furgoneta) flujo.readObject();
                     // Añade el objeto a la lista
                     listaV.add(a);
                 }

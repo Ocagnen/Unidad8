@@ -6,13 +6,14 @@
 package actividad08;
 
 import actividad04.*;
+import java.io.Serializable;
 import java.util.Objects;
 
 /**
  *
  * @author javier
  */
-public class Vehiculo implements Comparable<Vehiculo> {
+public class Vehiculo implements Comparable<Vehiculo>, Serializable {
 
     private int bastidor;
     private String matricula;

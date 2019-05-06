@@ -6,12 +6,13 @@
 package actividad08;
 
 import actividad04.*;
+import java.io.Serializable;
 
 /**
  *
  * @author javier
  */
-public class Furgoneta extends Vehiculo {
+public class Furgoneta extends Vehiculo implements Serializable{
 
     private int carga;
     private int volumen;
