@@ -16,6 +16,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
+import java.util.Collections;
 
 /**
  *
@@ -154,6 +155,37 @@ public class Main {
         }
         
         System.out.println("Lista ordenada por bastidor");
+        
+        Collections.sort(listaV, (v1,v2)->v1.getBastidor()-v2.getBastidor());
+        for (Vehiculo vehiculo : listaV) {
+            System.out.println(vehiculo.toStringFichero());
+        }
+        
+        System.out.println("Borrar los archivos originales");
+        
+        Path element = Paths.get("furgonetas.dat");
+        Path element2 = Paths.get("turismos.dat");
+        Path element3 = Paths.get("deportivos.dat");
+        try {
+            Files.delete(element);
+            Files.delete(element2);
+            Files.delete(element3);
+        } catch (IOException e) {
+            System.out.println("Problema borrando el archivo.");
+            System.out.println(e.toString());
+        }
+        
+        System.out.println("");
+        System.out.println("Mostrar contenido de la carpeta");
+        File f2 = new File("C:\\Users\\Javier\\Documents\\NetBeansProjects\\Unidad8Casa");
+        if (f2.exists()){
+            File[] ficheros = f2.listFiles();
+            for (File file2 : ficheros) {
+                System.out.println(file2.getName());
+            }
+             }else {    System.out.println("El directorio a listar no existe");
+        }
+
 
     }
 
