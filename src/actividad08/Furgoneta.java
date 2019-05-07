@@ -12,7 +12,7 @@ import java.io.Serializable;
  *
  * @author javier
  */
-public class Furgoneta extends Vehiculo implements Serializable{
+public class Furgoneta extends Vehiculo{
 
     private int carga;
     private int volumen;
